@@ -4,6 +4,8 @@ var imdb = require('imdb-api');
 /* GET users listing. */
 router.post('/getDataByName', function(req, res, next) {
 
+  // getting an exception from here as request timeout, so i have just mocked the data for the rendering purpose
+  
   console.log(req.body.query);
       //imdb.get("Guardians of the Galaxy Vol. 2", {apiKey: "ae6969ba"}, function(things){
   //  console.log(things);
