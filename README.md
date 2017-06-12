@@ -18,14 +18,14 @@ To configure the node JS server, below are the steps.
 
 To configure the client application below are the steps.
 
-1.	Create client project.
-2.	Create one framework to load all the applications, in my case now I have only two applications to load.
-    a.	imdbDataPresenter : used to render the data
-    b.	imdbDataProvider. Used to get the data from the server based on the query provided by the app imdbDataPresenter.
+1. Create client project.
+2. Create one framework to load all the applications, in my case now I have only two applications to load.
+    * imdbDataPresenter : used to render the data
+    * imdbDataProvider. Used to get the data from the server based on the query provided by the app imdbDataPresenter.
 3.	In this client application there are some framework files
-    a.	Framework.js : to start the framework structure.
-    b.	ApplicationManager : load all the applications
-    c.	ResourceLoader: load all the resources i.e js files, css files.
-    d.	templateManager: to load and create the template object because I have used Handlebar templating to handle rendering of data.
+    * Framework.js : to start the framework structure.
+    *	ApplicationManager : load all the applications
+    *	ResourceLoader: load all the resources i.e js files, css files.
+    *	templateManager: to load and create the template object because I have used Handlebar templating to handle rendering of data.
 4.	To run the application on local I have used Apache server.
 
