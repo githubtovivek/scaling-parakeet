@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>IMDB</title>
+    <link rel="stylesheet" type="text/css" href="lib/css/jquery-ui.min.css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="well" id="applicationContainer">
+
+</div>
+<!-- jquery base, underscore, resource loader, and the framework only -->
+<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="lib/js/underscore.js"></script>
+<script type="text/javascript" src="lib/js/handlebars.js"></script>
+<script type="text/javascript" src="ApplicationManager.js"></script>
+<script type="text/javascript" src="TemplateManager.js"></script>
+<script type="text/javascript" src="ResourceLoader.js"></script>
+<script type="text/javascript" src="Framework.js"></script>
+
+<script type="text/javascript">
+    var loadApplications = function(dynamicRoot, staticRoot)
+    {
+        Framework.start(function()
+        {
+            Framework.applicationManager.loadApplication('IMDBDataPresenter');
+            Framework.applicationManager.loadApplication('IMDBDataProvider');
+            Framework.applicationManager.startLoading();
+        }, dynamicRoot, staticRoot);
+    };
+
+    loadApplications('http://localhost:3000/', '');
+</script>
+</body>
+</html>

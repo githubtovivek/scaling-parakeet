@@ -1,0 +1,25 @@
+.tiles-container
+{
+    width: 100%;
+    margin: 20px;
+    background: #FFFFFF;
+}
+
+.tile
+{
+    width: 245px;
+    background: #e2e0e0;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.info
+{
+    text-align: center;
+}
+
+.rounded
+{
+    border-radius: 10px;
+}
