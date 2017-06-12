@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var omdb = require('imdb-api');
+var imdb = require('imdb-api');
 /* GET users listing. */
 router.post('/getDataByName', function(req, res, next) {
 
